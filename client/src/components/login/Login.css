@@ -1,0 +1,50 @@
+#login_page {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#login_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 100px;
+    grid-row-start: 1;
+    justify-content: center;
+}
+
+#login_title {
+    grid-column: 2; 
+    text-align: center; 
+    font-weight: 700;
+    font-family: Wendy One;
+    letter-spacing: 3px;
+}
+
+form {
+    margin-top: 30px;
+    grid-column: 2;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #cccccc;
+}
+
+button {
+    /* background-color: #ff8c00; */
+    background-color: rgba(0, 0, 255, 0.377);
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#register {
+    grid-column: 2;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}

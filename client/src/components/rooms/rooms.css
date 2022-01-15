@@ -1,0 +1,100 @@
+#new_rooms_page {
+    background: lightslategrey;
+    border-radius: 20px;
+    padding:25px;
+}
+
+#game_room_title {
+    background: var(--lightGrey);
+    box-shadow: 5px 10px #b3b2b2;
+    border-radius: 30px;
+    padding: 25px;
+    font-family: Wendy One;
+    letter-spacing: 3px;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+#room_info_table_container {
+    font-family: Happy Monkey;
+    margin-top: 50px;
+    background: var(--purple);
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#room_info_table {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#add_gap {
+    padding-right: 10px;
+}
+
+#room_info_table_data {
+    padding-left: 10px;
+    background: thistle;
+    text-align: center;  
+    border-radius: 20px;  
+}
+
+#available_rooms {
+    font-family: Wendy One;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#create_room_table_container {
+    background-color: var(--purple);
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Wendy One;
+    letter-spacing: 2px;
+}
+
+#create_room_table_container h2 {
+    font-family: Wendy One;
+    letter-spacing: 2px;
+}
+
+#create_room_table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.btn {
+    cursor: pointer;
+    background: var(--light-color);
+    color: var(--dark-color-a);
+    border: 0;
+    width: 100%;
+    /* font-size: 17px; */
+  }
+
+@media (min-width: 1px) and (max-width: 400px) {
+    #game_room_title {
+        font-size: large;
+    }
+    
+    #available_rooms {
+        letter-spacing: 0px;
+        font-size: medium;
+    }
+
+    #create_room_table_container h2 {
+        letter-spacing: 0px;
+        font-size: medium;
+    }
+
+    .btn {
+        width: 50%;
+    }
+}

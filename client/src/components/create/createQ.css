@@ -1,0 +1,34 @@
+.create_navbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+#create_question_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr, 5fr;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 150px;
+}
+
+
+#create_title {
+    font-family: Wendy One;
+    letter-spacing: 2px;
+    grid-column: 2;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#create_question_content form {
+    margin-top: 50px;
+}
+
+#create_question_content form button {
+    margin-top: 30px;
+}

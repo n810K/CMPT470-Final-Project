@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Carter+One&family=Happy+Monkey&family=Luckiest+Guy&family=Press+Start+2P&family=Rammetto+One&family=Wendy+One&display=swap");
+
+a {
+  list-style-type: none;
+}
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+}
+#mc,
+#tf,
+#word {
+  font-size: 30px;
+  background-color: rgb(22, 35, 70);
+  padding: 30px;
+}
+#linkmc,
+#linktf,
+#linkword {
+  color: white;
+}
+#parent {
+  margin: auto;
+  margin-top: 200px;
+  font-family: Atma;
+}

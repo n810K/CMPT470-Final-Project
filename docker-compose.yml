@@ -1,0 +1,60 @@
+version: "3.4"
+services:
+  project-client:
+    container_name: project-client
+    image: project-client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    volumes:
+      - ./client/src:/app/src
+    ports:
+      - 8080:80
+  project-server:
+    container_name: project-server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+      target: base
+    ports:
+      - "5000:5000"
+    expose:
+      - 5000
+    volumes:
+      - ./server/src:/app/src
+      - ./server/nodemon.json:/app/nodemon.json
+    networks:
+      - project
+    depends_on:
+      - postgres
+    command: yarn run dev
+  postgres:
+    container_name: project-pg
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    networks:
+      - project
+    volumes:
+      - postgres-data:/data/db
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+  pgadmin:
+    container_name: project-pgadmin
+    image: dpage/pgadmin4
+    restart: always
+    depends_on:
+      - postgres
+    ports:
+      - "5050:80"
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+networks:
+  project:
+    driver: bridge
+volumes:
+  postgres-data:
+    driver: local

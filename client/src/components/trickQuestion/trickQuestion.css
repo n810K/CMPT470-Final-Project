@@ -1,0 +1,24 @@
+/* #daily_question {
+    grid-row: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+#daily_question h2 {
+    margin-top: 50px;
+    font-family: Wendy One;
+    letter-spacing: 2px;
+}
+
+#daily_question p {
+    margin-top: 20px;
+}
+
+#daily_question ul {
+    margin-top: 20px;
+}
+
+#daily_question ul li{
+    margin-top: 10px;
+} */

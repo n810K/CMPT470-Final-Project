@@ -1,0 +1,119 @@
+#history_section {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    background-color: rgb(184, 188, 201);
+    text-align: center;
+}
+
+#history_title {
+    font-family: Wendy One;
+    letter-spacing: 3px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+#headers_table  {
+    margin-top: 25px;
+    background-color: rgb(221, 190, 150);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_th, .table_td {
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 25px;
+}
+
+.table_td {
+    background-color: darkcyan;
+}
+
+.table_th {
+    font-family: Happy Monkey;
+}
+
+#table_rows {
+    border-collapse: separate;
+    border-spacing: 1px 15px;
+}
+
+
+@media (min-width: 1px) and (max-width: 500px) { 
+    #history_section {
+        margin-top: 100px;
+        margin-right: -10px;
+    }
+
+    #headers_table  {
+        margin-top: 25px;
+        background-color: burlywood;
+        margin-left: auto;
+        margin-right: auto;
+        table-layout: fixed;
+        width: 80%;
+    }
+
+    .table_th, .table_td {
+        width: 30px;
+        padding: 0px;
+        font-size: small;
+        word-wrap: break-word;
+    }
+
+    #table_rows {
+        border-spacing: 1px 0px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 550px) { 
+    #history_section {
+        margin-top: 100px;
+        margin-right: -10px;
+    }
+
+    .table_th, .table_td {
+        width: 40px;
+        padding: 0px;
+        font-size: small;
+    }
+
+    #table_rows {
+        border-spacing: 1px 0px;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 600px) { 
+    #history_section {
+        margin-top: 100px;
+        margin-right: -10px;
+    }
+
+    .table_th, .table_td {
+        width: 10px;
+        padding: 0px;
+        font-size: small;
+    }
+
+    #table_rows {
+        border-spacing: 1px 0px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) { 
+    #history_section {
+        margin-top: 100px;
+        margin-right: -10px;
+    }
+
+    .table_th, .table_td {
+        width: 10px;
+        padding: 0px;
+    }
+
+    #table_rows {
+        border-spacing: 1px 0px;
+    }
+}

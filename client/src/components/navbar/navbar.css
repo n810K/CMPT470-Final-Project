@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Carter+One&family=Happy+Monkey&family=Luckiest+Guy&family=Press+Start+2P&family=Rammetto+One&family=Wendy+One&display=swap');
+
+.navbar_section {
+    display: flex;
+    align-items: center;
+    /* background-color: cadetblue; */
+    /* background-color: #466289; */
+    background-color: #1F2833;
+    height: 100px;
+}
+
+.logo {
+    font-size: xxx-large;
+    font-family: 'Atma';
+    letter-spacing: 3px;
+    margin-left: 40px;
+    display: inline-block;
+    border-style: double;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #1F2833;
+    border-color: rgb(107, 182, 184);
+    color: cadetblue
+}
+
+.fas {
+    color: white;
+}
+
+.nav-menu {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    font-family: Helvetica;
+    margin-left: 100px;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-right: 45px;
+}
+
+.links {
+    color: white;
+    font-size: x-large;
+    letter-spacing: 2px;
+}
+
+.links:hover {
+    border-bottom: 4px solid white;
+    color: rgb(243, 236, 236);
+}
+
+.hamburger_menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 1349px) {
+
+    .logo {
+        font-size: x-large;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 93%;
+        left: -100%;
+        opacity: 1;
+        transition: all 1s ease;
+        grid-gap: 30px;
+        margin-left: 0px;
+        background-color:#c8d8e4;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        opacity: 1;
+        transition: all 1s ease;
+        z-index: 1;
+    }
+
+    .hamburger_menu {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 0;
+        transform: translate(-100%, 60%);
+    }
+
+    .links:hover {
+        color: black;
+    }
+}

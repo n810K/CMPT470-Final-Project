@@ -1,0 +1,13 @@
+#room_content {
+    margin-top: 150px;
+}
+
+#chat_icon {
+    background-color: thistle;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 100px;
+}

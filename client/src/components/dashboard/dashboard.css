@@ -1,0 +1,377 @@
+:root {
+    --purple: rgb(184, 188, 201);
+    --lightGrey: rgb(238, 236, 238);
+    --shadowGrey: #b3b2b2;
+}
+
+#nav_bar {
+    position: absolute;
+    top: 0;
+    height: 100px;
+}
+
+#dashboard_body {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    margin-top: 120px;
+}
+
+#welcome_user {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-right: 20px;
+    border-style: dotted;
+    border-color: grey;
+    background: var(--purple);
+    height: 100%;
+}
+
+#welcome_user h2 {
+    margin-top: 30px;
+    margin-left: 15px;
+    font-family: Wendy One;
+    letter-spacing: 2px;
+}
+
+#game_instructions {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 40px;
+    background-color: lightslategrey;
+    border-radius: 20px;
+}
+
+#game_instructions h2 {
+    text-align: center;
+    font-family: Wendy One;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    background-color: var(--lightGrey);
+    padding: 20px;
+    margin-left:20px;
+    margin-right: 20px;
+    border-radius: 20px
+}
+
+#game_instructions section {
+    margin-top: 20px;;
+    margin-left: 15px;
+    padding: 30px;
+}
+
+/* --------------------------- */
+
+#steps_to_play h3 {
+    font-family: Wendy One;
+    display: inline;
+    margin-right: 30px;
+    letter-spacing: 1px;
+
+}
+#steps_to_play h4 {
+    font-family: Happy Monkey;
+    font-weight: bold;
+}
+#steps_to_play p {
+    font-family: Happy Monkey;
+    margin-bottom: 20px;
+}
+
+#number {
+    background-color: lightpink;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+}
+
+#step_header, #step_info {
+    background-color: var(--lightGrey);
+    padding-left: 70px;
+    padding-right: 30px;
+    padding-top: 30px;
+    border-radius: 20px;
+}
+
+#step_header {
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+#step {
+    background-color: var(--purple);
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --------------------------- */
+
+
+#global_leadboard {
+    grid-row: 1;
+    grid-column: 2;
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    border-color: var(--purple);
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px var(--purple);
+    background: #fff;
+}
+
+#global_leadboard h2 {
+    margin-top: 15px;
+    font-family: Wendy One;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#leadboard_names {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    font-family: Happy Monkey;
+}
+
+#leadboard_names li, #scores li {
+    padding-top: 15px;
+}
+
+#scores {
+    display: inline-block;
+    margin-left: 60px;
+    font-family: Happy Monkey;
+}
+
+#daily_question {
+    grid-row: 3;
+    grid-column: 1;
+    text-align: center;
+    margin-top: 40px;
+    background-color: var(--purple);
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+#daily_question h2 {
+    margin-top: 20px;
+    font-family: Wendy One;
+    letter-spacing: 2px;
+}
+
+#daily_question p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#daily_question ul {
+    margin-top: 20px;
+}
+
+#daily_question ul li {
+    margin-top: 10px;
+    counter-increment: list-number;
+}
+
+#daily_question ul li::before {
+    content: counter(list-number, upper-alpha) ') ';
+}
+
+#social_media {
+    grid-row: 3;
+    grid-column: 2;
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgb(184, 188, 201);
+    border-radius: 20px;
+}
+
+
+#social_media_h2 {
+    margin-top: 20px;
+    font-family: Wendy One;
+    letter-spacing: 2px;
+    background-color: rgb(238, 236, 238);
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 7px #b3b2b2;
+
+}
+
+
+#social_info {
+    background-color: rgb(238, 236, 238);
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+#social_media_icons {
+    margin-top: 20px;
+}
+
+#social_media_icons i {
+    width: 100px;
+}
+
+
+/* for smaller screens */
+@media (min-width: 1px) and (max-width: 800px) {
+
+    #daily_question, #game_instructions, #social_media {
+        border-radius: 10px;
+    }
+
+    #dashboard_body {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    #welcome_user {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    
+    #welcome_user h2 {
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    
+    #game_instructions {
+        grid-row: 3;
+        grid-column: 1;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        padding-bottom: 15px;
+    }
+
+    #game_instructions h2 {
+        text-align: center;
+        letter-spacing: 2px;
+        margin-top: 15px;
+    }
+    
+    #game_instructions section {
+        margin-top: 20px;;
+        margin-left: 15px;
+    }
+
+    #subtitle_instruct {
+        font-size: small;
+    }
+    
+    #global_leadboard {
+        grid-row: 2;
+        grid-column: 1;
+        text-align: center;
+        border-style: solid;
+        border-width: medium;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    
+    #global_leadboard h2 {
+        margin-top: 15px;
+        font-family: Wendy One;
+        letter-spacing: 2px;
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    #leadboard_names {
+        display: inline-block;
+        text-align: center;
+        margin-top: 15px; 
+        margin-bottom: 15px;
+        font-family: Happy Monkey;
+    }
+    
+    #leadboard_names li, #scores li {
+        padding-top: 15px;
+    }
+    
+    #scores {
+        display: inline-block;
+        margin-left: 60px;
+        font-family: Happy Monkey;
+    }
+    
+    #daily_question {
+        grid-row: 4;
+        grid-column: 1;
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+    
+    #daily_question h2 {
+        margin-top: 25px;
+    }
+
+    #daily_question p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #daily_question ul {
+        margin-top: 20px;
+    }
+    
+    #daily_question ul li {
+        margin-top: 10px;
+        counter-increment: list-number;
+    }
+    
+    #daily_question ul li::before {
+        content: counter(list-number, upper-alpha) ') ';
+    }
+    
+    #social_media {
+        grid-row: 5;
+        grid-column: 1;
+        margin-top: 20px;
+    }
+    
+    #social_media h2 {
+        margin-top: 25px;
+        letter-spacing: 2px;
+    }
+    
+    #social_media_icons {
+        margin-top: 20px;
+    }
+    
+    #social_media_icons i {
+        width: 80px;
+    }
+
+}
